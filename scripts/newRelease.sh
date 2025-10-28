@@ -1,11 +1,13 @@
 VERSION=`jq -r '.version' manifest.json`
+
+if [ -z "$VERSION" ]; then
+    echo "Error: Could not determine version from manifest.json"
+    exit 1
+fi
+
 git tag -a "v$VERSION" -m "Release version $VERSION"
 git push origin "v$VERSION"
 
-if [ -e "CheckThisOut_$VERSION.zip" ]; then
-    rm "CheckThisOut_$VERSION.zip"
-fi
+echo "Version $VERSION tagged and pushed."
 
-zip -r "CheckThisOut_$VERSION.zip" . -x "*.git*" "*.DS_Store" "scripts/*"
-echo "Created CheckThisOut_$VERSION.zip"
-
+$(dirname "$0")/newBuild.sh
