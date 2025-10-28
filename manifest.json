@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "CheckThisOut",
   "description": "Quickly check the current page against W3C, Schema.org, and other web standards validators.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "action": {
     "default_title": "CheckThisOut",
     "default_popup": "popup.html"
