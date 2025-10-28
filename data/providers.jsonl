@@ -1,0 +1,8 @@
+# One JSON object per line. Fields:
+# - background: CSS color for the item background/logo circle
+# - logo: path or data URL for the logo (optional)
+# - text: label displayed in the popup
+# - magicUrl: target URL; placeholders {url} and {encodedUrl} are supported and will be replaced with the current tab URL
+{"background":"#365d95","logo":"assets/logos/w3c.png","text":"W3C HTML Validator","magicUrl":"https://validator.w3.org/nu/?doc={encodedUrl}"}
+{"background":"#990000","logo":"assets/logos/schema.png","text":"Schema.org Validator (GS1)","magicUrl":"https://validator.schema.org/#url={encodedUrl}"}
+{"background":"#7ba5d8","logo":"assets/logos/opengraph.png","text":"Open Graph Checker","magicUrl":"https://www.opengraph.xyz/url/{encodedUrl}"}

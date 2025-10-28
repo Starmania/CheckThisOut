@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CheckThisOut</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="app-title">CheckThisOut</div>
+    </header>
+    <main id="list" class="list" role="list"></main>
+    <template id="item-template">
+      <button class="item" role="listitem">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="text"></span>
+      </button>
+    </template>
+    <footer class="app-footer">
+      <a href="https://github.com/Starmania/CheckThisOut" target="_blank" rel="noreferrer">About</a>
+    </footer>
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>
