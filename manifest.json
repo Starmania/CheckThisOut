@@ -14,5 +14,13 @@
     "128": "icons/icon128.png"
   },
   "permissions": ["tabs", "activeTab"],
-  "host_permissions": ["<all_urls>"]
+  "host_permissions": ["<all_urls>"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@check-this-out",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
 }
